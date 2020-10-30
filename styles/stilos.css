@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(247, 241, 241);
+}
+img {
+  /* width: 100%; */
+}
+h1 {
+  font-size: 1.5rem;
+}
+
+/*HEADER*/
+
+.barra-logo {
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1.text-logo {
+  color: rgb(21, 117, 21);
+  text-align: center;
+}
+h1.text-logo span {
+  color: rgb(6, 167, 6);
+}
+img.logo {
+  border-radius: 50%;
+}
+.barra {
+  margin-top: 0rem;
+}
+.barra-nav {
+  margin-top: 3.5rem;
+}
+
+a {
+  margin: 0.5rem;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+button {
+  padding: 0.7rem;
+  /* background-color:  rgb(21, 117, 21); */
+  background: linear-gradient(10deg, rgb(21, 117, 21), rgb(6, 167, 6));
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  margin: 2rem 0.5rem;
+}
+button:hover {
+  background: linear-gradient(10deg, rgb(13, 71, 13), rgb(4, 122, 4));
+}
+
+i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: rgb(2, 37, 2);
+}
+
+.hero {
+  width: 75%;
+  margin: 0 auto;
+
+  background-size: cover;
+}
+.img-principal {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 30%;
+}
+
+.formulario {
+  margin-top: 4.5rem;
+}
+
+/*CURSOS*/
+h2.titulo-cursos {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(2, 37, 2);
+}
+
+.cursos {
+  width: 80%;
+  margin: 1rem auto;
+  border: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.curso {
+  text-align: center;
+  margin: 1.2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.clase-curso {
+  color: rgb(2, 37, 2);
+}
+.descripcion {
+  color: rgb(2, 37, 2);
+}
+.precio {
+  color: rgb(153, 202, 17);
+  font-size: 1.5rem;
+}
+.precio span {
+  color: rgb(2, 37, 2);
+}
+.carritos {
+  font-size: 1rem;
+}

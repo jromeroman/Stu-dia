@@ -38,32 +38,41 @@ img.logo {
   margin-top: 0rem;
 }
 .barra-nav {
-  margin-top: 3.5rem;
+  margin: 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0rem 1rem;
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
 }
 button {
-  padding: 0.7rem;
-  /* background-color:  rgb(21, 117, 21); */
+  padding: 0.2rem 0.5rem;
+  background-color: rgb(21, 117, 21);
   background: linear-gradient(10deg, rgb(21, 117, 21), rgb(6, 167, 6));
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   outline: none;
   border: none;
-  margin: 2rem 0.5rem;
+  margin: 0.5rem 0.2rem;
+  display: flex;
 }
 button:hover {
   background: linear-gradient(10deg, rgb(13, 71, 13), rgb(4, 122, 4));
 }
+.boton-aprende {
+  margin: 1rem 1rem;
+  padding: 0.2rem 2.2rem;
+}
 
 i {
   font-size: 2rem;
-  margin-right: 1rem;
+  margin: 0.5rem 0 0 0.8rem;
   color: rgb(2, 37, 2);
 }
 
@@ -120,5 +129,54 @@ h2.titulo-cursos {
   color: rgb(2, 37, 2);
 }
 .carritos {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0.1rem;
+}
+/**/
+.submenu {
+  position: relative;
+  left: 5%;
+}
+
+.submenu #carrito {
+  display: none;
+}
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  left: -100px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 0.9rem;
+  min-height: 400px;
+  min-width: 300px;
+}
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.contenido-hero {
+  margin-top: 80px;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  width: 60%;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+table {
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 10rem;
 }

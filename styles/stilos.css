@@ -180,3 +180,51 @@ table {
   box-sizing: border-box;
   margin-right: 10rem;
 }
+
+/**/
+
+#lista-cursos .row {
+  margin-bottom: 20px;
+}
+.agregar-carrito {
+  margin: 10px 0;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+}
+@media (min-width: 550px) {
+  .card {
+    text-align: left;
+  }
+}
+.info-card {
+  padding: 10px 20px;
+}
+
+.info-card p,
+.card h4 {
+  margin-bottom: 5px;
+}
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+}
+.footer .menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}

@@ -66,8 +66,8 @@ button:hover {
   background: linear-gradient(10deg, rgb(13, 71, 13), rgb(4, 122, 4));
 }
 .boton-aprende {
-  margin: 1rem 1rem;
-  padding: 0.2rem 2.2rem;
+  margin: 1rem auto;
+  padding: 0.2rem 2rem;
 }
 
 i {
@@ -102,21 +102,22 @@ h2.titulo-cursos {
 }
 
 .cursos {
-  width: 80%;
+  width: 90%;
   margin: 1rem auto;
   border: 1rem;
-
   display: flex;
   flex-wrap: wrap;
 }
 .curso {
   text-align: center;
-  margin: 1.2rem;
+  margin: 1rem;
   background-color: white;
   border-radius: 1rem;
+  width: 30%;
 }
 .clase-curso {
-  color: rgb(2, 37, 2);
+  color: rgb(163, 75, 41);
+  font-size: 1.5rem;
 }
 .descripcion {
   color: rgb(2, 37, 2);
@@ -131,6 +132,9 @@ h2.titulo-cursos {
 .carritos {
   font-size: 1.2rem;
   margin: 1rem 0.1rem;
+}
+.carrito {
+  width: 100%;
 }
 /**/
 .submenu {
@@ -152,7 +156,7 @@ h2.titulo-cursos {
   padding: 10px;
   margin-top: 0.9rem;
   min-height: 400px;
-  min-width: 300px;
+  min-width: 500px;
 }
 .vacio {
   padding: 10px;
@@ -179,6 +183,7 @@ table {
   width: 100%;
   box-sizing: border-box;
   margin-right: 10rem;
+  background-color: white;
 }
 
 /**/
@@ -187,7 +192,7 @@ table {
   margin-bottom: 20px;
 }
 .agregar-carrito {
-  margin: 10px 0;
+  margin: 17px 0;
 }
 
 .card {
@@ -227,4 +232,43 @@ table {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
+}
+/*bb*/
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.u-pull-right {
+  float: right;
+}
+.u-pull-left {
+  float: left;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-width: 0;
+  border-color: gray;
+  border-top: 1px solid #0a0707;
+}
+a button {
+  color: #0a0707;
+}
+th {
+  color: rgb(4, 99, 4);
+  border-radius: 0rem;
+  margin-right: 1.5rem;
+}
+/*BORRAR CURSO*/
+a.borrar-curso {
+  color: rgb(4, 99, 4);
 }

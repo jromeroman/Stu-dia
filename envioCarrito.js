@@ -23,10 +23,12 @@ function cargarEventListeners() {
 // Funciones
 
 function agregarCurso(e) {
+  e.preventDefault();
   if (e.target.classList.contains("agregar-carrito")) {
     const cursoSeleccionado = e.target.parentElement.parentElement;
     leerDatosCurso(cursoSeleccionado);
   }
+  // console.log("agregando...");
 }
 
 //funcion eliminar un curso del carrito
@@ -53,6 +55,7 @@ function leerDatosCurso(curso) {
     id: curso.querySelector("a").getAttribute("data-id"),
     cantidad: 1,
   };
+  console.log(infoCurso);
 
   //revisa si el curso ya exite en carrito
   const existe = articuloCarrito.some((curso) => curso.id === infoCurso.id);
@@ -90,13 +93,17 @@ function carritoHtml() {
     console.log(curso);
     const row = document.createElement("tr");
     row.innerHTML = `
+    
     <td>
+    
     <img src="${imagen}" width="100"> 
     </td>
     <td>
+    
     ${titulo}
     </td>
      <td>
+     
     ${precio}
     </td>
      <td>
@@ -105,6 +112,7 @@ function carritoHtml() {
     <td>
     <a href="#" class="borrar-curso" data-id="${id}">X</a>
     </td>
+    <hr>
     `;
 
     //agregar el html del carrito en el tbody

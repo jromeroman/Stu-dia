@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/stilos.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -35,17 +38,18 @@
               <li class="submenu">
                 <i class="fas fa-shopping-cart"><a href="#"></a></i>
                 <div id="carrito">
-                  <table id="lista-carrito" class="table">
+                  <table id="lista-carrito" class="table carrito-t">
                     <thead>
                       <tr>
                         <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
-                        <th></th>
                       </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                      <hr />
+                    </tbody>
                   </table>
 
                   <a href="#" id="vaciar-carrito" class="button u-full-width"
@@ -72,86 +76,91 @@
     <div class="cursos" id="lista-cursos">
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Cursos de 0 Html5 y Css3</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            Lo mejor de Html5 y Css3 basado en ES6 actualizado 2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $30.000</span></p>
+          <img src="./img/htmls-css.jpg" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="1" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
 
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Curso de JavaScript</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            Aprende a manejar JavaScript con las mejores practicas de ES6
+            actualizado 2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $45.000</span></p>
+          <img src="./img/JS.jpg" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="2" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Curso de React</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            Lo mejor de manejar Componentes para mejorar tu pagina actualizado
+            2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $45.000</span></p>
+          <img src="./img/react.png" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="3" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Curso de Angular-10</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            Aprende Angular es un framework de JavaScript que nos permite crear
+            SPAs actualizado 2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $45.000</span></p>
+          <img src="./img/Angular.jpg" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="4" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Curso de Vuejs V3</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            La nueva Composition API de Vue 3 trae importantes cambios en la
+            forma actualizado 2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $43.000</span></p>
+          <img src="./img/vuejs.jpg" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="5" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
       <div class="curso">
         <div class="datos">
-          <h4 class="clase-curso">Curso de Diseño</h4>
+          <h4 class="clase-curso">Aprende NodeJS</h4>
           <p class="descripcion">
-            Lo mejor del Diseño Grafico actualizado 2020
+            tecnología para el desarrollo de aplicaciones de propósito general.
+            actualizado 2020
           </p>
-          <p class="precio"><span>Precio</span>: $35.000</p>
-          <img src="./img/images (1).jpg" alt="" />
+          <p class="precio">Precio<span>: $41.000</span></p>
+          <img src="./img/nodejs.png" alt="" />
         </div>
         <button class="boton-aprende">
-          <a href="#">Aprende desde Ya</a>
+          <a href="#" data-id="6" class="agregar-carrito">Aprende desde Ya</a>
           <i class="carritos fas fa-shopping-cart"></i>
         </button>
       </div>
